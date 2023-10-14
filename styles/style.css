@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+
+:root
+{
+    --cor-primaria: #3E001F;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+    --cor-headers: #ffff1a;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.titulo-destaque 
+{
+    color: var(--cor-terciaria)
+}
+
+.apresentação
+{
+    padding: 8% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.apresentação_conteúdo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.apresentação_conteúdo_título
+{
+    font-family: 'Krona One', sans-serif;
+    font-size: 2.25rem;
+}
+.apresentação_conteúdo_texto
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem
+}
+.apresentação_links
+{
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    gap: 32px;
+}
+.apresentação_links_título {
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.5rem;
+}
+
+.apresentação_links_link
+{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    text-decoration: none;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: var(--cor-terciaria);
+    padding: 21.5px 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--cor-secundaria);
+    font-weight: 600;
+}
+
+.apresentação_links_link:hover
+{
+    background-color: var(--cor-hover)
+}
+
+.rodape
+{
+    background-color: var(--cor-terciaria);
+    color: #000000;
+    text-align: center;
+    padding: 23.64px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.cabeçalho
+{
+    width: 100%;
+    padding: 2% 0 0 15%;
+}
+
+.cabeçalho_menu
+{
+    display: flex;
+    gap: 5rem;    
+}
+
+.cabeçalho_menu_link
+{
+    color: var(--cor-terciaria);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.apresentação_imagem
+{
+    width: 50%;
+    height: 35rem;
+}
+@media (max-width: 1200px)
+{
+    .apresentação
+    {
+        flex-direction: column-reverse;
+        padding: 0 0;
+        gap: 2.5rem;
+        width: 100%;
+    }
+    body
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 8.5rem;
+    }
+    .cabeçalho
+    {
+        padding: 19% 0 0 0;
+    }
+    .cabeçalho_menu
+    {   justify-content: center;
+        gap: 1.8rem;
+    }
+    .apresentação_imagem
+    {
+        height: 17.5rem
+    }
+    .apresentação_links_link
+    {
+        gap: 0px;
+    }
+}
+
+/* Página currículo */
+.body_currículo
+{
+    height: 100vh;
+}
+.apresentação2
+{
+    padding: 8% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.currículo
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.currículo_headers
+{
+    color: var(--cor-headers);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+.currículo_mini_headers
+{
+    color: var(--cor-terciaria);
+    font-size: 1.125rem;
+}
+
+.currículo_contexto
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.currículo_contexto p
+{
+    font-family: 'AR One Sans', sans-serif;
+}
+.currículo_experiências
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: 'AR One Sans', sans-serif;
+}
+.currículo_experiências_lista
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.currículo_estudos
+{
+    font-family: 'AR One Sans', sans-serif;
+    font-size: 1rem;
+}
+
+@media (max-width: 1200px)
+{
+    .apresentação2
+    {
+    }
+    .currículo
+    {
+        width: 100%;
+    }
+}
